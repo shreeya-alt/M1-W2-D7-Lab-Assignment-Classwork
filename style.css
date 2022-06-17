@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+.header{
+    position: fixed;
+    width: 100%;
+}
+
+.header div{
+    background-color: #e36a57;
+    width: 100%;
+    height: 1.8em;
+}
+
+.header div i{
+    color: white;
+    font-size: 10pt;
+    padding: .6em;
+    float: right;
+    margin-right: .3em;
+}
+
+.header div i:hover{
+    background-color: rgb(54, 54, 205);
+}
+
+/* Navigation Bar */
+nav{
+    display: flex;
+    background-color: #253568;
+    width: 100%;
+    height: max-content;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav img{
+    height: 5.5em;
+    width: auto;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li{
+    padding: 2em 1em;
+    position: relative;
+}
+
+nav ul li a,
+nav p a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10pt;
+}
+
+nav ul li .dropdown-menu{
+    display: none;
+}
+
+nav ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    background-color: #253568;
+    margin-top: 2.25em;
+    margin-left: -8px;
+}
+
+
+nav ul li:hover .dropdown-menu li{
+    width: 6em;
+    padding: 1em;
+
+}
+
+nav ul li:hover .dropdown-menu li:hover{
+    background-color: #e36a57;
+}
+
+nav button{
+    padding: .9em;
+    border: 1px solid #e36a57;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 10pt;
+}
+
+.first-btn{
+    color: #e36a57;
+}
+
+.first-btn:hover{
+    color: white;
+    font-weight: 600;
+    background-color: #e36a57;
+    cursor: pointer;
+}
+
+.second-btn{
+    color: white;
+    font-weight: 600;
+    background-color: #e36a57;
+}
+
+.second-btn:hover{
+    background-color: transparent;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.flag{
+    height: .7em;
+    width: auto;
+}
+
+nav p a:hover{
+    color: #e6e6e6;
+}
+
+/* x - Navigation Bar - x */
+/* x - Header - x */
+
+/* Body */
+
+/* Red Panda Image */
+
+.body-img{
+    background: url(https://katcentre.org/wp-content/uploads/2021/07/reddd.jpg);
+    width: 100%;
+    height: 45em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.body-img div{
+    text-align: center;
+}
+
+.body-img div h1{
+    padding-top:4.5em;
+    text-transform: uppercase;
+    font-size: 42pt;
+    font-weight: 500;
+    color: white;
+}
+
+.body-img div .btns{
+    padding: 3em;
+}
+
+.body-img div .btns button,
+.divider-1 button{
+    border-radius: 25px;
+    padding: 1.3em;
+    border: none;
+    text-transform: uppercase;
+    font-size: 9pt;
+    width: 12em;
+}
+
+.body-img div .btns a:first-child button{
+    border: 3px solid white;
+    background: #0000004e;
+    color: white;
+    font-weight: 600;
+}
+
+.body-img div .btns a:nth-child(2) button,
+.btn{
+    background: #e36a57;
+    color: white;
+    font-weight: 600;
+    border-bottom: 1px solid #d55a47;
+}
+
+.body-img div .btns a button:hover{
+    font-weight: 400;
+    cursor: pointer;
+    transition: 500ms;
+    color: #e6e6e6;
+}
+
+.body-img div .btns a:first-child button:hover{
+    background: #0000003a;
+}
+
+.body-img div .btns a:nth-child(2) button:hover{
+    background: #e36a57e5;
+}
+/* x - Red Panda Image - x */
+
+/* Divider 1 */
+
+.divider-1{
+    width: 100%;
+    height: 18em;
+    background: #e36a57;
+    text-align: center;
+}
+
+.divider-1 p{
+    color: white;
+    font-weight: 500;
+    font-size: 15pt;
+    line-height: 1.5;
+    padding: 4em 4em 0 4em;
+}
+
+.divider-1 button{
+    border: 3px solid white;
+    color: white;
+    font-weight: 500;
+    background-color: transparent;
+    margin-top: 2em;
+    border-radius: 18px;
+    text-transform: none;
+}
+
+.divider-1 button:hover{
+    cursor: pointer;
+    transition: 500ms;
+    color: #e6e6e6;
+    font-weight: 300;
+    background-color: rgba(240, 240, 240, 0.088);
+}
+/* x - Divider 1 - x */
+
+/* Content 1 */
+.content-1{
+    height: 33em;
+    width: 85%;
+    margin: auto;
+}
+
+.content-1 p{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(36, 36, 36);
+    line-height: 1.6;
+    padding: 3em 0;
+}
+
+.content-1 div,
+.content-1 .dog-numbers,
+.content-1 .dog-txts{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-1 div span{
+    background-color: #253568;
+    width: 13em;
+    height: 13em;
+    margin: auto;
+}
+
+.content-1 div span:first-child{
+    background: center no-repeat url(https://katcentre.org/wp-content/uploads/2019/12/KAT-9.png);
+}
+
+.content-1 div span:nth-child(2){
+    background: center no-repeat url(https://katcentre.org/wp-content/uploads/2019/12/KAT-7.png);
+}
+
+.content-1 div span:nth-child(3){
+    background: center no-repeat url(https://katcentre.org/wp-content/uploads/2019/12/KAT-8.png);
+}
+
+.content-1 div span:nth-child(4){
+    background: center no-repeat url(https://katcentre.org/wp-content/uploads/2019/12/KAT-6.png);
+}
+
+.content-1 .dog-numbers{
+    width: 90%;
+}
+
+.content-1 .dog-numbers h2{
+    font-weight: 300;
+    font-size: 30pt;
+}
+
+.content-1 .dog-numbers h2:first-child{
+    margin-left: 120px;
+}
+
+.content-1 .dog-txts{
+    width: 100%;
+}
+
+.dog-txts p{
+    color: #e36a57;
+    font-size: 11pt;
+    text-align: center;
+    padding-top: .5em;
+}
+
+.content-1 .dog-txts p:first-child{
+    margin-left: 90px;
+}
+
+.content-1 .dog-txts p:last-child{
+    margin-right: 60px;
+
+}
+/* x - Content 1 - x */
+
+
+/* Divider 2 */
+.divider-2{
+    height: 12em;
+    width: 100%;
+    background: #253568;
+    text-align: center;
+}
+
+.divider-2 h1{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    font-size: 27pt;
+    padding-top: 1.5em;
+}
+
+.divider-2 p{
+    color: #cfd2dc;
+    font-weight: 300;
+    padding-top: .4em;
+    padding-bottom: 2.5em;
+}
+
+.divider-2 div,
+.diff-img div:nth-child(2){
+    background-color: white;
+    width: 60px;
+    height: 2px;
+    margin: auto;
+}
+/* x - Divider 2 - x */
+
+
+/* Main Content */
+.main-content{
+    padding: 3em 0;
+}
+
+.m-content-1,
+.m-content-2,
+.m-content-3,
+.m-content-4{
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.main-content img{
+    height: 28em;
+    width: auto;
+}
+
+.m-content-1 div,
+.m-content-2 div,
+.m-content-3 div,
+.m-content-4 div{
+    padding: 4em;
+}
+
+.h2{
+    color: #e36a57;
+    font-weight: 500;
+    font-size: 23pt;
+}
+
+.m-content-1 div .line,
+.m-content-2 div .line,
+.m-content-3 div .line,
+.m-content-4 div .line{
+    background-color: #e36a57;
+    width: 55px;
+    height: 2px;
+    padding: 0;
+    margin: 2em 0;
+}
+
+.p{
+    color: #666666;
+    font-size: 15pt;
+    font-weight: 200;
+    line-height: 1.7;
+}
+
+.btn{
+    border-radius: 25px;
+    padding: 1.2em;
+    border: none;
+    font-size: 9pt;
+    width: 12em;
+    background: #e36a57;
+    color: white;
+    font-weight: 400;
+    border-bottom: 1px solid #cd513e;
+    letter-spacing: .5px;
+    margin-top: 3em;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transition: 300ms;
+    color: #ebeaea;
+    font-weight: 300;
+    background: #e36a57ed;
+}
+
+.m-content-2,
+.m-content-4{
+    background-color: #fbfbfb;
+    padding: 3em 0 3em 3em;
+}
+
+.m-content-4{
+    padding-bottom: 1em;
+}
+/* x - Main Content - x */
+
+
+/* Different Images */
+.diff-img{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url(https://www.loveyourdog.com/wp-content/uploads/2019/04/strays-900x500.jpg);
+    width: 100%;
+    height: 58em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.diff-img h2{
+    color: white;
+    text-align: center;
+    padding: 5em 0 1.2em 0;
+    font-size: 30pt;
+    font-weight: 400;
+}
+
+.diff-img div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4em;
+}
+
+.diff-img div .white-bg{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 21em;
+    height: max-content;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 2em;
+}
+
+.diff-img div img{
+    border-radius: 5px;
+}
+
+.diff-img button{
+    border: none;
+    background-color: #e36a57;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17pt;
+    font-weight: 300;
+    padding: 1em;
+    border-radius: 20px;
+    margin-top: 1.4em;
+}
+/* x - Different Images - x */
+
+/* Subscribe */
+.subscribe{
+    width: 100%;
+    height: 9em;
+    background-color: #efecec;
+    margin-top: 3em;
+    padding: 3em 5em;
+}
+
+.subscribe h2{
+    color: #e36a57;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 23pt;
+    margin-bottom: .5em;
+}
+
+.subscribe p{
+    color: #666666;
+    font-size: 11pt;
+    font-weight: 300;
+    margin-bottom: .5em;
+}
+
+.subscribe input{
+    height: 2.7em;
+    width: 18em;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: .3em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.subscribe input::placeholder{
+    font-weight: 500;
+}
+
+.subscribe input:focus{
+    outline: none;
+}
+
+.subscribe button{
+    height: 3.2em;
+    width: 18em;
+    border-radius: 2px;
+    padding: .5em;
+    border: none;
+    background-color: #e36a57;
+    color: white;
+    margin-right: 1em;
+}
+/* x - Subscribe - x */
+
+/* Image */
+.last-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* x - Image - x */
+
+/* Footer */
+.footer{
+    background-color: #191919;
+    height: 16em;
+    width: 100%;
+    text-align: center;
+    padding: 3em;
+    z-index: 1;
+}
+
+.footer div{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin: auto;
+}
+
+.footer div i{
+    color: white;
+    font-size: 1.7em;
+}
+
+.footer p{
+    font-size: 9pt;
+    color: white;
+    padding: 3em 3em 1em 3em;
+}
+
+.footer p span{
+    font-weight: bold;
+}
+
+.footer span:nth-child(3){
+    font-size: 9pt;
+    color: #e36a57;
+    display: block;
+}
+
+.footer img{
+    margin-top: 2em;
+}
+
+.footer p:last-child{
+    color: white;
+}
+
+.footer p:last-child a{
+    text-decoration: none;
+    color: white;
+}
+/* x - Footer - x */
+
+/* Top */
+.top{
+    position: fixed;
+    border-radius: 2px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1030;
+    background-color: #767576d0;
+    color: white;
+}
+/* x - Top - x */
